@@ -11,10 +11,10 @@ My plan was to get the simulator/PID combination running, play around with the p
 
 But in manually exploring the parameters, I found a set that allowed the car to successfully complete the track.
 
-Here is what I found:
-proportional parameter - basic parameter to steer the car, by itself tends to be unstable even at small values
-derivative parameter - needed to limit instability introduced by the basic proportional correction. Has little effect by itself
-integration parameter - useful to correct bias and reduce instability, but did not seem necessary in this simulator. I had successful lap completions with it set to 0.0.
+Here is what I found:<br>
+proportional parameter - basic parameter to steer the car, by itself tends to be unstable even at small values<br>
+derivative parameter - needed to limit instability introduced by the basic proportional correction. Has little effect by itself<br>
+integration parameter - useful to correct bias and reduce instability, but did not seem necessary in this simulator. I had successful lap completions with it set to 0.0.<br>
 
 Overall, I found a small proportional parameter, a large derivative parameter (an order of magnitude larger than Kp) and a very small integration parameter (order of magnitude smaller than Kp) works well.
 
